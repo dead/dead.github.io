@@ -14,7 +14,7 @@ owner:
   bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
   email:          gustavobenn@hotmail.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        dead_x
+  #twitter:        dead_x
   #facebook:       gustavobenn
   github:         dead
   #stackexchange:  
@@ -26,7 +26,7 @@ owner:
   #google_plus:    +yourid
 
 # Background image to be tiled on all pages
-background: japan.jpg
+background: 
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   
