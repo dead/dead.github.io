@@ -1,4 +1,4 @@
-title:            Dead Stuff
+title:            Gustavo Bennemann
 description:      Coding and random stuff
 disqus_shortname: hpstrtheme
 reading_time:     true
@@ -15,18 +15,18 @@ owner:
   email:          gustavobenn@hotmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        dead_x
-  facebook:       gustavobenn
+  #facebook:       gustavobenn
   github:         dead
-  stackexchange:  
-  linkedin:       
+  #stackexchange:  
+  #linkedin:       
   instagram:      dead_x
-  flickr:         
-  tumblr:         
+  #flickr:         
+  #tumblr:         
   # google plus id, include the '+', eg +mmistakes
-  google_plus:    +yourid
+  #google_plus:    +yourid
 
 # Background image to be tiled on all pages
-background: 
+background: japan.jpg
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   
