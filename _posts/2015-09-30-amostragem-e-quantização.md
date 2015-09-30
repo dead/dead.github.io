@@ -40,7 +40,7 @@ Considerando uma imagem da Lena de resolução 512 pixels de altura e largura, a
     
 ![png](/images/posts/amostragem/output_3_1.png)
 
-A quantização da imagem é pegar um intervalo de cores (no mundo real é um intervalo não contável) e diminuir para um intervalo finito e contável. Na imagem da Lena vamos trasnformar cada canal de cor que são representadas entre 0 e 255 para serem representadas em 0 a N, onde no exemplo o N = 5.
+A quantização da imagem é pegar um intervalo de cores (no mundo real é um intervalo não contável) e diminuir para um intervalo finito e contável. Na imagem da Lena vamos transformar cada canal de cor que são representadas no intervalo de 0 a 255 para serem representadas em 0 a N, onde no exemplo o N = 5.
 
     
     def quantizacao(img, n = 2):
