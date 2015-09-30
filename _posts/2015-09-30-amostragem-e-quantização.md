@@ -28,15 +28,6 @@ Fazer a amostragem quer dizer que serão selecionados um número finito de ponto
     plt.imshow(img)
 
     (512L, 512L, 3L)
-    
-
-
-
-
-    <matplotlib.image.AxesImage at 0xa37dac8>
-
-
-
 
 ![png](images/posts/amostragem/output_1_2.png)
 
@@ -49,38 +40,19 @@ Considerando uma imagem da Lena de resolução 512 pixels de altura e largura, a
     
     plt.imshow(amostragem(img, 2))
 
-
-
-
-    <matplotlib.image.AxesImage at 0xb0c6f60>
-
-
-
-
 ![png](images/posts/amostragem/output_3_1.png)
 
 
-Para fazer a quantização da imagem
+A quantização da imagem é pergar um intervalo de cores (no mundo real infinitos) e diminuir para um número finito. Na imagem da lena vamos trasnformar cada canal de cor que são representadas entre 0 e 255 para serem representadas em 0 a N, onde no exemplo o N = 5.
 
 
     def quantizacao(img, n = 2):
         m = np.amax(img)+1
-        a = np.uint8(img/(m/float(n))) #
+        a = np.uint8(img/(m/float(n)))
         b = np.uint8((a/(n-1.))*255) #transforma de volta pra 0-255 (para exibir a imagem)
         return b
     
     plt.imshow(quantizacao(img, 5))
 
 
-
-
-    <matplotlib.image.AxesImage at 0xa54b828>
-
-
-
-
 ![png](images/posts/amostragem/output_5_1.png)
-
-
-
-    
