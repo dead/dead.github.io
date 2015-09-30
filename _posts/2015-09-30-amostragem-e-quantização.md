@@ -23,13 +23,11 @@ Fazer a amostragem quer dizer que serão selecionados um número finito de ponto
     
     img = ImagePIL.open(f)
     img = np.array(img.getdata(), np.uint8).reshape(img.size[1], img.size[0], 3)
-    print img.shape
     
     plt.imshow(img)
     
-    
-(512L, 512L, 3L)
-![png](images/posts/amostragem/output_1_2.png)
+
+![png](/images/posts/amostragem/output_1_2.png)
 
 Considerando uma imagem da Lena de resolução 512 pixels de altura e largura, ao aplicar uma amostragem que seleciona metade dos pixels em relação a altura e relação ao largura. Depois de aplicar a amostragem, é obtida uma imagem com altura e largura de 256 pixels.
 
@@ -40,9 +38,9 @@ Considerando uma imagem da Lena de resolução 512 pixels de altura e largura, a
     plt.imshow(amostragem(img, 2))
     
     
-![png](images/posts/amostragem/output_3_1.png)
+![png](/images/posts/amostragem/output_3_1.png)
 
-A quantização da imagem é pergar um intervalo de cores (no mundo real infinitos) e diminuir para um número finito. Na imagem da lena vamos trasnformar cada canal de cor que são representadas entre 0 e 255 para serem representadas em 0 a N, onde no exemplo o N = 5.
+A quantização da imagem é pegar um intervalo de cores (no mundo real é um intervalo não contável) e diminuir para um número finito e contável. Na imagem da Lena vamos trasnformar cada canal de cor que são representadas entre 0 e 255 para serem representadas em 0 a N, onde no exemplo o N = 5.
 
     
     def quantizacao(img, n = 2):
@@ -54,4 +52,4 @@ A quantização da imagem é pergar um intervalo de cores (no mundo real infinit
     plt.imshow(quantizacao(img, 5))
     
 
-![png](images/posts/amostragem/output_5_1.png)
+![png](/images/posts/amostragem/output_5_1.png)
