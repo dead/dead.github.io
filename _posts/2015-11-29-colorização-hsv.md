@@ -2,7 +2,7 @@
 layout: post
 title: Colorização HSV
 description: ""
-modified: 2015-10-01
+modified: 2015-11-29
 tags: [processamento de imagem digital]
 ---
 
@@ -28,7 +28,7 @@ Carrega as bibliotecas necessárias e a imagem da Lena.
     plt.show()
 
 
-![png](output_0_0.png)
+![png](/images/posts/colorizacao_hsv/output_0_0.png)
 
 Cria uma paleta HSV e aplica ela a imagem
 
@@ -48,4 +48,4 @@ Cria uma paleta HSV e aplica ela a imagem
 
 
 Resultado:
-![png](output_1_1.png)
+![png](/images/posts/colorizacao_hsv/output_1_1.png)
